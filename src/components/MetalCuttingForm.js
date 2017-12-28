@@ -2,11 +2,7 @@
  * Created by Superstar on 28.12.2017.
  */
 import React,  { Component } from 'react'
-import data from '../data/data.json'
 import { Field, reduxForm } from 'redux-form'
-import { getValues } from '../ducks/submitForm'
-import { connect } from 'react-redux'
-
 
 class MetalCuttingForm extends Component {
 
@@ -39,6 +35,4 @@ class MetalCuttingForm extends Component {
 export default reduxForm({
   form: 'MetalCuttingForm',
   destroyOnUnmount: false
-})(
-    connect(null, { getValues })(MetalCuttingForm)
-)
+})(MetalCuttingForm)
