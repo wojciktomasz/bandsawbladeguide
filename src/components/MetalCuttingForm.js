@@ -20,6 +20,18 @@ class MetalCuttingForm extends Component {
       })
     }
 
+    renderWidth() {
+      const mappedWidths = _.map(data, 'widths')
+      const mergedArray = _.flatten(mappedWidths)
+      const uniqueValueArray = _.uniq(mergedArray)
+      return uniqueValueArray.map(item => {
+        return (
+            <label key={item}><Field name='producer' component='input' type='radio' value={item}/>{item}</label>
+        )
+      })
+    }
+
+
     render () {
       const { handleSubmit } = this.props
 
@@ -29,9 +41,13 @@ class MetalCuttingForm extends Component {
               <div className='row justify-content-md-center'>
                 <div className='col col-md-8'>
                   <form onSubmit={handleSubmit(() => this.onSubmit())}>
-                    <label>Producer</label>
+                    <label>Producent</label>
                     <div>
                       {this.renderProducer()}
+                    </div>
+                    <label>Szerokość</label>
+                    <div>
+                      {this.renderWidth()}
                     </div>
                     <button type='submit' className='btn btn-primary'>Submit</button>
                   </form>
