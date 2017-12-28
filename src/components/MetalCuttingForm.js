@@ -2,11 +2,15 @@
  * Created by Superstar on 28.12.2017.
  */
 import React,  { Component } from 'react'
+import data from '../data/data.json'
 
 class MetalCuttingForm extends Component {
     render () {
         return (
-            <div>Cutting Metal Form</div>
+            <div>
+              {console.log(data)}
+              Cutting Metal Form
+            </div>
         )
     }
 }
