@@ -3,6 +3,8 @@
  */
 import React,  { Component } from 'react'
 import { Field, reduxForm } from 'redux-form'
+import data from '../data/data.json'
+import _ from 'lodash'
 
 class MetalCuttingForm extends Component {
 
@@ -10,18 +12,26 @@ class MetalCuttingForm extends Component {
       this.props.history.push('/doradca/metal/pily')
     }
 
+    renderProducer() {
+      return _.map(_.uniqBy(data, 'producer'), post => {
+        return (
+            <label key={post.id}><Field name='producer' component='input' type='radio' value={post.producer}/>{post.producer}</label>
+        )
+      })
+    }
+
     render () {
       const { handleSubmit } = this.props
 
         return (
             <div className='container'>
-              <div className='row'>
-                <div className='col-md-8 offset-md-2'>
+              {console.log(data)}
+              <div className='row justify-content-md-center'>
+                <div className='col col-md-8'>
                   <form onSubmit={handleSubmit(() => this.onSubmit())}>
                     <label>Producer</label>
                     <div>
-                      <label><Field name='producer' component='input' type='radio' value='SWORD-MASTER'/>SWORD-MASTER</label>
-                      <label><Field name='producer' component='input' type='radio' value='AMADA'/>Amada</label>
+                      {this.renderProducer()}
                     </div>
                     <button type='submit' className='btn btn-primary'>Submit</button>
                   </form>
