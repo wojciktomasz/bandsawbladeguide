@@ -26,7 +26,31 @@ class MetalCuttingForm extends Component {
       const uniqueValueArray = _.uniq(mergedArray)
       return uniqueValueArray.map(item => {
         return (
-            <label key={item}><Field name='producer' component='input' type='radio' value={item}/>{item}</label>
+            <label key={item}><Field name='width' component='input' type='radio' value={item}/>{item}</label>
+        )
+      })
+    }
+
+    renderSort() {
+      const mappedWidths = _.map(data, 'cutting')
+      const mergedArray = _.flatten(mappedWidths)
+      const mappedSort = mergedArray.map(item => item.sort)
+      const mappedSortUnique = _.uniq(mappedSort)
+      return mappedSortUnique.map(item => {
+        return (
+            <label key={item}><Field name='sort' component='input' type='radio' value={item}/>{item}</label>
+        )
+      })
+    }
+
+    renderType() {
+      const mappedWidths = _.map(data, 'cutting')
+      const mergedArray = _.flatten(mappedWidths)
+      const mappedSort = mergedArray.map(item => item.type)
+      const mappedSortUnique = _.uniq(mappedSort)
+      return mappedSortUnique.map(item => {
+        return (
+            <label key={item}><Field name='type' component='input' type='radio' value={item}/>{item}</label>
         )
       })
     }
@@ -48,6 +72,14 @@ class MetalCuttingForm extends Component {
                     <label>Szerokość</label>
                     <div>
                       {this.renderWidth()}
+                    </div>
+                    <label>Rodzaj ciętego materiału</label>
+                    <div>
+                      {this.renderSort()}
+                    </div>
+                    <label>Typ ciętego materiału</label>
+                    <div>
+                      {this.renderType()}
                     </div>
                     <button type='submit' className='btn btn-primary'>Submit</button>
                   </form>
