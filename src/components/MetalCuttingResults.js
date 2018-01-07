@@ -9,18 +9,30 @@ import _ from 'lodash'
 
 class MetalCuttingResults extends Component {
 
-  renderName() {
-    const name = data.map(item => (_.filter(item.cutting, {'sort': this.props.chosenValues.sort, 'type': this.props.chosenValues.type})).length > 0 ? item.name : null).filter(item => item !== null)
-    return <h3>{name[0]}</h3>
+  renderBlades() {
+    const filteredBlades = _.filter(data, {cutting: [{sort: this.props.chosenValues.sort, type: this.props.chosenValues.type}]})
+    // const filteredWidths = filteredBlades.filter(item => item.widths.includes((this.props.chosenValues.width).toString))
+    return filteredBlades.map(item => {
+      return (
+          <div>
+            <h1>Linia {item.line}:</h1>
+            <img src={item.img} alt={item.title} />
+            <h2>{item.name}</h2>
+            <h3>{item.title}</h3>
+            <p>{item.description}</p>
+            <a href={item.catalogue}>Pobierz katalog</a>
+          </div>
+      )
+    })
   }
 
   render () {
     const { chosenValues } = this.props
     return (
         <div>
-          {console.log(chosenValues.type)}
+          {console.log(chosenValues)}
           <h1>Zobacz propozycje wirtualnego doradcy:</h1>
-          <h2>{this.renderName()}</h2>
+          <div>{this.renderBlades()}</div>
         </div>
     )
   }
