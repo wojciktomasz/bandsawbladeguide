@@ -11,10 +11,11 @@ class MetalCuttingResults extends Component {
 
   renderBlades() {
     const filteredBlades = _.filter(data, {cutting: [{sort: this.props.chosenValues.sort, type: this.props.chosenValues.type}]})
-    // const filteredWidths = filteredBlades.filter(item => item.widths.includes((this.props.chosenValues.width).toString))
-    return filteredBlades.map(item => {
+    const parse = parseInt(this.props.chosenValues.width)
+    const filteredBladesWithWidths = filteredBlades.filter(item => item.widths.indexOf(parse) > -1)
+    return filteredBladesWithWidths.map(item => {
       return (
-          <div>
+          <div key={item.id}>
             <h1>Linia {item.line}:</h1>
             <img src={item.img} alt={item.title} />
             <h2>{item.name}</h2>

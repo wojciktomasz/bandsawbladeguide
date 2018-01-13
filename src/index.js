@@ -27,7 +27,7 @@ ReactDOM.render(
                     <Route path='/doradca/drewno' component={WoodCuttingForm} />
                     <Route path='/doradca/zywnosc' component={FoodCuttingForm} />
                     <Route path='/doradca/tworzywo' component={MaterialCuttingForm}/>
-                    <Route path='/doradca' component={App} />
+                    <Route path='/' component={App} />
                 </Switch>
             </div>
         </BrowserRouter>
