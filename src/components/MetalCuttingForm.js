@@ -5,6 +5,9 @@ import React,  { Component } from 'react'
 import { Field, reduxForm } from 'redux-form'
 import data from '../data/data.json'
 import _ from 'lodash'
+import Steps, { Step } from 'rc-steps'
+import 'rc-steps/assets/index.css'
+import 'rc-steps/assets/iconfont.css'
 
 class MetalCuttingForm extends Component {
 
@@ -64,6 +67,11 @@ class MetalCuttingForm extends Component {
               {console.log(data)}
               <div className='row justify-content-md-center'>
                 <div className='col col-md-8'>
+                  <Steps current={2}>
+                    <Step/>
+                    <Step/>
+                    <Step/>
+                  </Steps>
                   <form onSubmit={handleSubmit(() => this.onSubmit())}>
                     <label>Producent</label>
                     <div>

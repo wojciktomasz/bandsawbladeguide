@@ -6,6 +6,9 @@ import { connect } from 'react-redux'
 import {getFormValues} from 'redux-form'
 import data from '../data/data.json'
 import _ from 'lodash'
+import Steps, { Step } from 'rc-steps'
+import 'rc-steps/assets/index.css'
+import 'rc-steps/assets/iconfont.css'
 
 class MetalCuttingResults extends Component {
 
@@ -32,6 +35,11 @@ class MetalCuttingResults extends Component {
     return (
         <div>
           {console.log(chosenValues)}
+          <Steps current={3}>
+            <Step/>
+            <Step/>
+            <Step/>
+          </Steps>
           <h1>Zobacz propozycje wirtualnego doradcy:</h1>
           <div>{this.renderBlades()}</div>
         </div>
