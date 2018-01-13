@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import FormContact from './components/FormContact'
 import Steps, { Step } from 'rc-steps'
-import './App.css'
 import 'rc-steps/assets/index.css'
 import 'rc-steps/assets/iconfont.css'
+import './App.css'
 
 class App extends Component {
   render() {

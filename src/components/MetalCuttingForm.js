@@ -6,8 +6,7 @@ import { Field, reduxForm } from 'redux-form'
 import data from '../data/data.json'
 import _ from 'lodash'
 import Steps, { Step } from 'rc-steps'
-import 'rc-steps/assets/index.css'
-import 'rc-steps/assets/iconfont.css'
+import '../App.css'
 
 class MetalCuttingForm extends Component {
 
@@ -73,19 +72,19 @@ class MetalCuttingForm extends Component {
                     <Step/>
                   </Steps>
                   <form onSubmit={handleSubmit(() => this.onSubmit())}>
-                    <label>Producent</label>
+                    <label className="form-label">Producent</label>
                     <div>
                       {this.renderProducer()}
                     </div>
-                    <label>Szerokość</label>
+                    <label className="form-label">Szerokość</label>
                     <div>
                       {this.renderWidth()}
                     </div>
-                    <label>Rodzaj ciętego materiału</label>
+                    <label className="form-label">Rodzaj ciętego materiału</label>
                     <div>
                       {this.renderSort()}
                     </div>
-                    <label>Typ ciętego materiału</label>
+                    <label className="form-label">Typ ciętego materiału</label>
                     <div>
                       {this.renderType()}
                     </div>

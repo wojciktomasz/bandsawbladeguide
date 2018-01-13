@@ -6,7 +6,83 @@
   background-color: #fff;
 }
 
+label {
+  color: #6e6e6e;
+  margin: 5px 5px 5px 20px;
+}
+
+label > input {
+  margin-right: 5px;
+}
+
+.form-label {
+  text-indent: 0;
+  display: block;
+  text-transform: uppercase;
+  color: #6e6e6e;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  margin: 15px;
+}
+
 .form-contact {
   background-color: #f8f8f8;
   padding: 1px 25px 10px;
+}
+
+.rc-steps {
+  font-size: 0;
+  width: 100%;
+  line-height: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rc-steps-item-icon {
+  background-color: #0d3e83!important;
+  font-weight: 600;
+  width: 50px;
+  height: 50px;
+  bottom: -25px;
+  line-height: 50px;
+  font-size: 25px;
+  border-radius: 50px;
+  text-align: center;
+  color: #fff!important;
+  border: 0!important;
+}
+
+.rc-steps-item-content {
+  margin-top: 17px;
+}
+
+.rc-steps-item-finish .rc-steps-item-icon > .rc-steps-icon {
+  color: #fff;
+}
+
+.rc-steps-item-icon > .rc-steps-icon.rcicon {
+  font-size: 18px;
+}
+
+.rc-steps-item-finish .rc-steps-item-title:after, .rc-steps-item-process .rc-steps-item-title:after {
+  background-color: #bcbcbc!important;
+}
+
+.rc-steps-horizontal:not(.rc-steps-label-vertical) .rc-steps-item {
+  margin-right: 0;
+}
+
+.rc-steps-item-title:after {
+  content: '';
+  height: 4px;
+  width: 1000px;
+  display: block;
+  position: absolute;
+  top: 0.55em;
+  left: -72%;
+}
+
+.rc-steps-item-process > .rc-steps-item-icon, .rc-steps-item-wait > .rc-steps-item-icon, .rc-steps-item-wait .rc-steps-item-icon > .rc-steps-icon {
+  background-color: #bcbcbc!important;
+  color: #fff!important;
 }

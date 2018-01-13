@@ -7,8 +7,6 @@ import {getFormValues} from 'redux-form'
 import data from '../data/data.json'
 import _ from 'lodash'
 import Steps, { Step } from 'rc-steps'
-import 'rc-steps/assets/index.css'
-import 'rc-steps/assets/iconfont.css'
 
 class MetalCuttingResults extends Component {
 
@@ -33,15 +31,19 @@ class MetalCuttingResults extends Component {
   render () {
     const { chosenValues } = this.props
     return (
-        <div>
-          {console.log(chosenValues)}
-          <Steps current={3}>
-            <Step/>
-            <Step/>
-            <Step/>
-          </Steps>
-          <h1>Zobacz propozycje wirtualnego doradcy:</h1>
-          <div>{this.renderBlades()}</div>
+        <div className='container'>
+          <div className='row justify-content-md-center'>
+            <div className='col col-md-8'>
+              {console.log(chosenValues)}
+              <Steps current={3}>
+                <Step/>
+                <Step/>
+                <Step/>
+              </Steps>
+              <h1>Zobacz propozycje wirtualnego doradcy:</h1>
+              <div>{this.renderBlades()}</div>
+            </div>
+          </div>
         </div>
     )
   }
