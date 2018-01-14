@@ -28,7 +28,7 @@ class MetalCuttingForm extends Component {
       const uniqueValueArray = _.uniq(mergedArray)
       return uniqueValueArray.map(item => {
         return (
-            <label key={item}><Field name='width' component='input' type='radio' value={item}/>{item}</label>
+            <label key={item}><Field name='width' component='input' type='radio' value={item.toString()}/>{item}</label>
         )
       })
     }
