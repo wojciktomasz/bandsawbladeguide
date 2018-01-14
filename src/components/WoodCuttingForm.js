@@ -6,6 +6,7 @@ import { reduxForm } from 'redux-form'
 import data from '../data/data.json'
 import Steps, { Step } from 'rc-steps'
 import { renderSort, renderType } from '../helpers/formFunctions'
+import FormButton from './Shared/FormButton'
 import '../App.css'
 
 class WoodCuttingForm extends Component {
@@ -19,7 +20,6 @@ class WoodCuttingForm extends Component {
 
         return (
             <div className='container'>
-              {console.log(data)}
                 <div className='row justify-content-md-center'>
                     <div className='col col-md-8'>
                         <Steps current={2}>
@@ -36,7 +36,7 @@ class WoodCuttingForm extends Component {
                             <div>
                               {renderType(data, 'wood')}
                             </div>
-                            <button type='submit' className='btn btn-primary'>Submit</button>
+                            <FormButton />
                         </form>
                     </div>
                 </div>

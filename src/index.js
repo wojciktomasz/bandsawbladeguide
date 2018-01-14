@@ -13,6 +13,7 @@ import FoodCuttingForm from './components/FoodCuttingForm'
 import MaterialCuttingForm from './components/MaterialCuttingForm'
 import MetalCuttingResults from './components/MetalCuttingResults'
 import WoodCuttingResults from './components/WoodCuttingResults'
+import FoodCuttingResults from './components/FoodCuttingResults'
 
 
 const createStoreWithMiddleware = applyMiddleware(logger)(createStore)
@@ -26,6 +27,7 @@ ReactDOM.render(
                     <Route path='/doradca/metal' component={MetalCuttingForm} />
                     <Route path='/doradca/drewno/pily' component={WoodCuttingResults} />
                     <Route path='/doradca/drewno' component={WoodCuttingForm} />
+                    <Route path='/doradca/zywnosc/pily' component={FoodCuttingResults} />
                     <Route path='/doradca/zywnosc' component={FoodCuttingForm} />
                     <Route path='/doradca/tworzywo' component={MaterialCuttingForm}/>
                     <Route path='/' component={App} />

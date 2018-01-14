@@ -6,6 +6,7 @@ import { reduxForm } from 'redux-form'
 import data from '../data/data.json'
 import Steps, { Step } from 'rc-steps'
 import { renderProducer, renderWidth, renderSort, renderType } from '../helpers/formFunctions'
+import FormButton from './Shared/FormButton'
 import '../App.css'
 
 class MetalCuttingForm extends Component {
@@ -34,7 +35,7 @@ class MetalCuttingForm extends Component {
                     </div>
                     <label className="form-label">Szerokość:</label>
                     <div>
-                      {renderWidth(data)}
+                      {renderWidth(data, 'metal')}
                     </div>
                     <label className="form-label">Rodzaj ciętego materiału:</label>
                     <div>
@@ -44,7 +45,7 @@ class MetalCuttingForm extends Component {
                     <div>
                       {renderType(data, 'metal')}
                     </div>
-                    <button type='submit' className='btn btn-primary'>Submit</button>
+                    <FormButton />
                   </form>
                 </div>
               </div>

@@ -5,6 +5,7 @@ import React from 'react'
 import _ from 'lodash'
 import { Field } from 'redux-form'
 
+const filteredByApplication = (data, params) => _.filter(data, ['application', params])
 
 const renderProducer = (data) => {
   return _.map(_.uniqBy(data, 'producer'), post => {
@@ -14,10 +15,11 @@ const renderProducer = (data) => {
   })
 }
 
-const renderWidth = data => {
-  const mappedWidths = _.map(data, 'widths')
+const renderWidth = (data, params) => {
+  const filtered = filteredByApplication(data, params)
+  const mappedWidths = _.map(filtered, 'widths')
   const mergedArray = _.flatten(mappedWidths)
-  const uniqueValueArray = _.uniq(mergedArray)
+  const uniqueValueArray = _.uniq(mergedArray).sort()
   return uniqueValueArray.map(item => {
     return (
         <label key={item}><Field name='width' component='input' type='radio' value={item.toString()}/>{item}</label>
@@ -26,7 +28,7 @@ const renderWidth = data => {
 }
 
 const renderSort = (data, params) => {
-  const filtered = _.filter(data, ['application', params])
+  const filtered = filteredByApplication(data, params)
   const mappedWidths = _.map(filtered, 'cutting')
   const mergedArray = _.flatten(mappedWidths)
   const mappedSort = mergedArray.map(item => item.sort)
@@ -39,7 +41,7 @@ const renderSort = (data, params) => {
 }
 
 const renderType = (data, params) => {
-  const filtered = _.filter(data, ['application', params])
+  const filtered = filteredByApplication(data, params)
   const mappedWidths = _.map(filtered, 'cutting')
   const mergedArray = _.flatten(mappedWidths)
   const mappedSort = mergedArray.map(item => item.type)

@@ -200,5 +200,94 @@
     "widths": [32, 35, 38, 51],
     "img": "http://www.sword.pl/wp-content/uploads/2014/09/pily_tasmowe_sword-master_strong_trak.jpg",
     "catalogue": "http://sword.pl/wp-content/uploads/2017/07/SWORD-MASTER-STRONG-TRAK.pdf"
+  },
+  {"id":8,
+    "name": "SWORD-MASTER STRONG TRAK",
+    "application": "wood",
+    "title": "Wysokiej jakości piły trakowe do przecinania drewna okrągłego",
+    "description": "Piły taśmowe SWORD-MASTER STRONG TRAK, dzięki innowacyjnej budowie korpusu i zęba, charakteryzują się zwiększoną o 40% żywotnością oraz dwukrotnie wydłużonym nieprzerwanym czasem pracy.",
+    "producer": "SWORD-MASTER",
+    "line": "Piły trakowe",
+    "cutting": [
+      {"sort": "prostoliniowe",
+        "type": "trakowe"}
+    ],
+    "widths": [32, 35, 38, 51],
+    "img": "http://www.sword.pl/wp-content/uploads/2014/09/pily_tasmowe_sword-master_strong_trak.jpg",
+    "catalogue": "http://sword.pl/wp-content/uploads/2017/07/SWORD-MASTER-STRONG-TRAK.pdf"
+  },
+  {"id":9,
+    "name": "SCALLOP",
+    "application": "food",
+    "title": "Piły taśmowe do porcjowania pieczywa oraz świeżych ryb",
+    "description": "Specjalistyczne taśmy o punktowej konstrukcji ostrza, z wrębami w kształcie wklęsłej soczewki. Zapewnia idealną pracę zarówno na wielopiłach taśmowych, krajalnicach jak i przecinarkach stołowych.",
+    "producer": "SWORD-MASTER",
+    "line": "Piły do żywności",
+    "cutting": [
+      {"sort": "Bezodpadowe cięcie mięsa",
+        "type": null},
+      {"sort": "Cięcie pieczywa",
+        "type": null},
+      {"sort": "Filetowanie i porcjowanie ryb",
+        "type": null}
+    ],
+    "widths": ["10x0.45", "12.5x0.5", "16x0.5"],
+    "img": "http://www.sword.pl/wp-content/uploads/2012/01/SCALLOP.jpg",
+    "catalogue": "http://sword.pl/wp-content/uploads/2017/07/SCALLOP.pdf"
+  },
+  {"id":10,
+    "name": "CONVEX",
+    "application": "food",
+    "title": "Piła taśmowa do rozbioru drobiu, porcjowania i filetowania ryb",
+    "description": "Specjalistyczne taśmy z falistym ostrzem w kształcie wypukłej soczewki z zaokrąglonymi wrębami i hartowanym grzbietem zapewniającym prostolinijne cięcie.",
+    "producer": "SWORD-MASTER",
+    "line": "Piły do żywności",
+    "cutting": [
+      {"sort": "Bezodpadowe cięcie mięsa",
+        "type": null},
+      {"sort": "Przepoławianie drobiowych korpusów",
+        "type": null},
+      {"sort": "Filetowanie i porcjowanie ryb",
+        "type": null}
+    ],
+    "widths": ["12.5x0.5", "16x0.5", "20x0.5", "40x0.8"],
+    "img": "http://www.sword.pl/wp-content/uploads/2012/01/CONVEX.jpg",
+    "catalogue": "http://sword.pl/wp-content/uploads/2017/07/CONVEX.pdf"
+  },
+  {"id":11,
+    "name": "THO bezzębna",
+    "application": "food",
+    "title": "Piła taśmowa do filetowania i cięcia ryb",
+    "description": "Produkty typu THO wykonane ze specjalnego stopu są dopuszczone do kontaktu pośredniego i bezpośredniego z żywnością oraz spełniają odpowiednie normy zgodnie z regulacjami EC No 1935/2004 Parlamentu Europejskiego ustalonymi 27 października 2004.",
+    "producer": "SWORD-MASTER",
+    "line": "Piły do żywności",
+    "cutting": [
+      {"sort": "Filetowanie i porcjowanie ryb",
+        "type": null}
+    ],
+    "widths": ["10x0.5", "12.5x0.5", "16x0.5", "30x0.7", "35x0.7"],
+    "img": "http://www.sword.pl/wp-content/uploads/2012/01/THObezzebna.jpg",
+    "catalogue": "http://sword.pl/wp-content/uploads/2017/07/THO-bezz%C4%99bna.pdf"
+  },
+  {"id":12,
+    "name": "THO",
+    "application": "food",
+    "title": "Piła taśmowa do rozbioru mięsa, drobiu oraz porcjowania i filetowania ryb",
+    "description": "Produkty typu THO wykonane ze specjalnego stopu są dopuszczone do kontaktu pośredniego i bezpośredniego z żywnością oraz spełniają odpowiednie normy zgodnie z regulacjami EC No 1935/2004 Parlamentu Europejskiego ustalonymi 27 października 2004. Korpus piły posiada wytrzymałość na rozciąganie 1450 N/mm2, natomiast ostrze charakteryzuje się twardością w zakresie 59 – 65 HRC. W zależności od szerokości i podziałki kąt natarcia wynosi 0 – 5°. Rozwarcie zębów (rzaz) wynosi 1,00 mm. ",
+    "producer": "SWORD-MASTER",
+    "line": "Piły do żywności",
+    "cutting": [
+      {"sort": "Cięcie i rozbiór tusz wieprzowych i wołowych",
+        "type": null},
+      {"sort": "Cięcie mrożonych bloków rybnych",
+        "type": null},
+      {"sort": "Cięcie ryb mrożonych",
+        "type": null},
+      {"sort": "Rozbiór drobiu",
+        "type": null}
+    ],
+    "widths": ["16x0.36", "16x0.4", "16x0.5", "16x0.56", "16x0.6", "19x0.56", "20x0.5"],
+    "img": "http://www.sword.pl/wp-content/uploads/2012/01/THO.jpg",
+    "catalogue": "http://sword.pl/wp-content/uploads/2017/07/THO.pdf"
   }
 ]
