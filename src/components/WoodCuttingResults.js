@@ -1,15 +1,14 @@
 /**
- * Created by Superstar on 28.12.2017.
+ * Created by Superstar on 14.01.2018.
  */
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { getFormValues } from 'redux-form'
-import { renderBladesWithWidths } from '../helpers/resultsFunctions'
 import Steps, { Step } from 'rc-steps'
+import { renderBlades } from '../helpers/resultsFunctions'
 
-class MetalCuttingResults extends Component {
-
-  render () {
+class WoodCuttingResults extends Component {
+  render() {
     const { chosenValues } = this.props
     return (
         <div className='container'>
@@ -22,7 +21,7 @@ class MetalCuttingResults extends Component {
                 <Step/>
               </Steps>
               <h1>Zobacz propozycje wirtualnego doradcy:</h1>
-              <div>{renderBladesWithWidths(chosenValues)}</div>
+              <div>{renderBlades(chosenValues)}</div>
             </div>
           </div>
         </div>
@@ -32,8 +31,8 @@ class MetalCuttingResults extends Component {
 
 const mapStateToProps = state => {
   return ({
-    chosenValues: getFormValues('MetalCuttingForm')(state)
+    chosenValues: getFormValues('WoodCuttingForm')(state)
   })
 }
 
-export default connect(mapStateToProps)(MetalCuttingResults)
+export default connect(mapStateToProps)(WoodCuttingResults)

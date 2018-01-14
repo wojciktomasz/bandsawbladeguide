@@ -2,10 +2,10 @@
  * Created by Superstar on 28.12.2017.
  */
 import React,  { Component } from 'react'
-import { Field, reduxForm } from 'redux-form'
+import { reduxForm } from 'redux-form'
 import data from '../data/data.json'
-import _ from 'lodash'
 import Steps, { Step } from 'rc-steps'
+import { renderProducer, renderWidth, renderSort, renderType } from '../helpers/formFunctions'
 import '../App.css'
 
 class MetalCuttingForm extends Component {
@@ -13,50 +13,6 @@ class MetalCuttingForm extends Component {
     onSubmit() {
       this.props.history.push('/doradca/metal/pily')
     }
-
-    renderProducer() {
-      return _.map(_.uniqBy(data, 'producer'), post => {
-        return (
-            <label key={post.id}><Field name='producer' component='input' type='radio' value={post.producer}/>{post.producer}</label>
-        )
-      })
-    }
-
-    renderWidth() {
-      const mappedWidths = _.map(data, 'widths')
-      const mergedArray = _.flatten(mappedWidths)
-      const uniqueValueArray = _.uniq(mergedArray)
-      return uniqueValueArray.map(item => {
-        return (
-            <label key={item}><Field name='width' component='input' type='radio' value={item.toString()}/>{item}</label>
-        )
-      })
-    }
-
-    renderSort() {
-      const mappedWidths = _.map(data, 'cutting')
-      const mergedArray = _.flatten(mappedWidths)
-      const mappedSort = mergedArray.map(item => item.sort)
-      const mappedSortUnique = _.uniq(mappedSort)
-      return mappedSortUnique.map(item => {
-        return (
-            <label key={item}><Field name='sort' component='input' type='radio' value={item}/>{item}</label>
-        )
-      })
-    }
-
-    renderType() {
-      const mappedWidths = _.map(data, 'cutting')
-      const mergedArray = _.flatten(mappedWidths)
-      const mappedSort = mergedArray.map(item => item.type)
-      const mappedSortUnique = _.uniq(mappedSort)
-      return mappedSortUnique.map(item => {
-        return (
-            <label key={item}><Field name='type' component='input' type='radio' value={item}/>{item}</label>
-        )
-      })
-    }
-
 
     render () {
       const { handleSubmit } = this.props
@@ -72,21 +28,21 @@ class MetalCuttingForm extends Component {
                     <Step/>
                   </Steps>
                   <form onSubmit={handleSubmit(() => this.onSubmit())}>
-                    <label className="form-label">Producent</label>
+                    <label className="form-label">Producent:</label>
                     <div>
-                      {this.renderProducer()}
+                      {renderProducer(data)}
                     </div>
-                    <label className="form-label">Szerokość</label>
+                    <label className="form-label">Szerokość:</label>
                     <div>
-                      {this.renderWidth()}
+                      {renderWidth(data)}
                     </div>
-                    <label className="form-label">Rodzaj ciętego materiału</label>
+                    <label className="form-label">Rodzaj ciętego materiału:</label>
                     <div>
-                      {this.renderSort()}
+                      {renderSort(data, 'metal')}
                     </div>
-                    <label className="form-label">Typ ciętego materiału</label>
+                    <label className="form-label">Typ ciętego materiału:</label>
                     <div>
-                      {this.renderType()}
+                      {renderType(data, 'metal')}
                     </div>
                     <button type='submit' className='btn btn-primary'>Submit</button>
                   </form>

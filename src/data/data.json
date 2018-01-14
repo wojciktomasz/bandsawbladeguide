@@ -1,5 +1,6 @@
 [{"id":1,
   "name": "SWORD-MASTER A",
+  "application": "metal",
   "title": "Wielozadaniowa bimetalowa piła taśmowa o szerokim spektrum zastosowania",
   "description": "Zastosowanie kobaltowej stali szybkotnącej M42 zapewnia pile wysoką odporność na zużycie. Ostrze uzyskuje szerokie zastosowanie, nie tylko dzięki właściwościom samego materiału, ale dodatkowo poprzez zastosowanie unikalnej technologii obróbki cieplnej. Oferowana gama podziałek umożliwia cięcie materiału o różnorodnych rozmiarach. Piła bardzo dobrze sprawdza się w warunkach cięcia produkcyjnego.",
   "producer": "SWORD-MASTER",
@@ -22,6 +23,7 @@
 },
   {"id":2,
     "name": "SWORD-MASTER AG",
+    "application": "metal",
     "title": "Piła taśmowa do cięcia produkcyjnego",
     "description": "Agresywna piła bimetalowa typu M42 przeznaczona do cięcia materiałów trudnoskrawalnych, takich jak konstrukcyjne stale stopowe i stale narzędziowe. Ze względu na kształt zęba zalecana głównie do cięcia przekrojów pełnych, zarówno pojedynczo jak i w pakietach. Przy odpowiednim doborze podziałki oraz prędkości skrawania sprawdza się także podczas cięcia profili.",
     "producer": "SWORD-MASTER",
@@ -96,6 +98,7 @@
   },
   {"id":3,
     "name": "SWORD-MASTER AP",
+    "application": "metal",
     "title": "Specjalistyczna piła odporna na obciążenie udarowe",
     "description": "Specjalistyczna piła bimetalowa typu M42 o wzmocnionym uzębieniu przeznaczona do cięcia kształtowników, rur i profili zamkniętych ze stali węglowych.",
     "producer": "SWORD-MASTER",
@@ -136,6 +139,7 @@
   },
   {"id":4,
     "name": "SWORD-MASTER AV",
+    "application": "metal",
     "title": "Specjalistyczna piła do cięcia pulsacyjnego pełnych materiałów",
     "description": "Bardzo agresywna piła bimetalowa typu M42 przeznaczona specjalnie do cięcia materiałów szczególnie trudnoskrawalnych, takich jak wysokostopowe stale narzędziowe i nierdzewne oraz stopy specjalne. Agresywne uzębienie o unikatowej zmiennej wysokości zapewnia podczas cięcia efekt pulsacji, co znacznie poprawia skuteczność cięcia materiałów bardzo trudno poddających się obróbce.",
     "producer": "SWORD-MASTER",
@@ -151,4 +155,50 @@
     "widths": [27, 34, 41, 54, 67],
     "img": "http://www.sword.pl/wp-content/uploads/2012/01/SWORDMASTER-AV.jpg",
     "catalogue": "http://sword.pl/wp-content/uploads/2017/07/SWORD-MASTER-AV.pdf"
-  }]
+  },
+  {"id":5,
+    "name": "SWORD-MASTER STRONG PRO",
+    "application": "wood",
+    "title": "Piła zaprojektowana do precyzyjnego cięcia prostoliniowego",
+    "description": "Piły taśmowe SWORD-MASTER STRONG PRO, dzięki indukcyjnie hartowanemu uzębieniu i zwiększonej trwałości rozwiedzenia, znakomicie sprawdzają się podczas cięcia wszystkich rodzajów drewna, metali nieżelaznych oraz plastiku.",
+    "producer": "SWORD-MASTER",
+    "line": "Piły stolarskie",
+    "cutting": [
+      {"sort": "prostoliniowe",
+        "type": "stolarskie"}
+    ],
+    "widths": [6, 10, 13, 16],
+    "img": "http://www.sword.pl/wp-content/uploads/2014/09/pily_tasmowe_sword-master_strong_pro.jpg",
+    "catalogue": "http://sword.pl/wp-content/uploads/2017/07/SWORD-MASTER-STRONG-PRO.pdf"
+  },
+  {"id":6,
+    "name": "SWORD-MASTER STRONG FLEX",
+    "application": "wood",
+    "title": "Piła zaprojektowana do wycinania konturowego na przecinarkach pionowych",
+    "description": "Piły taśmowe SWORD-MASTER STRONG FLEX, dzięki szerokiemu zakresowi rozmiarów i podziałek oraz doskonałej wydajności cięcia, świetnie sprawdzą się przy cięciu drewna twardego i miękkiego, materiałów drewnopochodnych, plastiku i materiałów nieżelaznych. ",
+    "producer": "SWORD-MASTER",
+    "line": "Piły stolarskie",
+    "cutting": [
+      {"sort": "konturowe/wycinanie łuków",
+        "type": "stolarskie"}
+    ],
+    "widths": [6, 10, 13, 16, 19, 25],
+    "img": "http://www.sword.pl/wp-content/uploads/2014/09/pily_tasmowe_sword-master_strong_flex.jpg",
+    "catalogue": "http://sword.pl/wp-content/uploads/2017/07/SWORD-MASTER-STRONG-FLEX.pdf"
+  },
+  {"id":7,
+    "name": "SWORD-MASTER STRONG TRAK",
+    "application": "wood",
+    "title": "Wysokiej jakości piły trakowe do przecinania drewna okrągłego",
+    "description": "Piły taśmowe SWORD-MASTER STRONG TRAK, dzięki innowacyjnej budowie korpusu i zęba, charakteryzują się zwiększoną o 40% żywotnością oraz dwukrotnie wydłużonym nieprzerwanym czasem pracy.",
+    "producer": "SWORD-MASTER",
+    "line": "Piły trakowe",
+    "cutting": [
+      {"sort": "prostoliniowe",
+        "type": "trakowe"}
+    ],
+    "widths": [32, 35, 38, 51],
+    "img": "http://www.sword.pl/wp-content/uploads/2014/09/pily_tasmowe_sword-master_strong_trak.jpg",
+    "catalogue": "http://sword.pl/wp-content/uploads/2017/07/SWORD-MASTER-STRONG-TRAK.pdf"
+  }
+]
