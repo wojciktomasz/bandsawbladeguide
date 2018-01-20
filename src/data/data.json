@@ -202,21 +202,6 @@
     "catalogue": "http://sword.pl/wp-content/uploads/2017/07/SWORD-MASTER-STRONG-TRAK.pdf"
   },
   {"id":8,
-    "name": "SWORD-MASTER STRONG TRAK",
-    "application": "wood",
-    "title": "Wysokiej jakości piły trakowe do przecinania drewna okrągłego",
-    "description": "Piły taśmowe SWORD-MASTER STRONG TRAK, dzięki innowacyjnej budowie korpusu i zęba, charakteryzują się zwiększoną o 40% żywotnością oraz dwukrotnie wydłużonym nieprzerwanym czasem pracy.",
-    "producer": "SWORD-MASTER",
-    "line": "Piły trakowe",
-    "cutting": [
-      {"sort": "prostoliniowe",
-        "type": "trakowe"}
-    ],
-    "widths": [32, 35, 38, 51],
-    "img": "http://www.sword.pl/wp-content/uploads/2014/09/pily_tasmowe_sword-master_strong_trak.jpg",
-    "catalogue": "http://sword.pl/wp-content/uploads/2017/07/SWORD-MASTER-STRONG-TRAK.pdf"
-  },
-  {"id":9,
     "name": "SCALLOP",
     "application": "food",
     "title": "Piły taśmowe do porcjowania pieczywa oraz świeżych ryb",
@@ -235,7 +220,7 @@
     "img": "http://www.sword.pl/wp-content/uploads/2012/01/SCALLOP.jpg",
     "catalogue": "http://sword.pl/wp-content/uploads/2017/07/SCALLOP.pdf"
   },
-  {"id":10,
+  {"id":9,
     "name": "CONVEX",
     "application": "food",
     "title": "Piła taśmowa do rozbioru drobiu, porcjowania i filetowania ryb",
@@ -254,7 +239,7 @@
     "img": "http://www.sword.pl/wp-content/uploads/2012/01/CONVEX.jpg",
     "catalogue": "http://sword.pl/wp-content/uploads/2017/07/CONVEX.pdf"
   },
-  {"id":11,
+  {"id":10,
     "name": "THO bezzębna",
     "application": "food",
     "title": "Piła taśmowa do filetowania i cięcia ryb",
@@ -269,7 +254,7 @@
     "img": "http://www.sword.pl/wp-content/uploads/2012/01/THObezzebna.jpg",
     "catalogue": "http://sword.pl/wp-content/uploads/2017/07/THO-bezz%C4%99bna.pdf"
   },
-  {"id":12,
+  {"id":11,
     "name": "THO",
     "application": "food",
     "title": "Piła taśmowa do rozbioru mięsa, drobiu oraz porcjowania i filetowania ryb",

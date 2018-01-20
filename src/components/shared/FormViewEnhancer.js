@@ -2,6 +2,7 @@
  * Created by Superstar on 20.01.2018.
  */
 import React, { Component }  from 'react'
+import FormContact from '../FormContact'
 
 export default WrappedComponent => class FormViewEnhancer extends Component {
   render() {
@@ -11,6 +12,7 @@ export default WrappedComponent => class FormViewEnhancer extends Component {
             <div className='col col-md-8'>
               <WrappedComponent {...this.props} />
             </div>
+            <FormContact />
           </div>
         </div>
     )

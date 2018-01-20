@@ -5,20 +5,18 @@ import React, {Component} from 'react'
 import {reduxForm} from 'redux-form'
 import data from '../data/data.json'
 import Steps, {Step} from 'rc-steps'
-import {renderSort, renderType} from '../helpers/formFunctions'
-import FormViewEnhancer from './shared/FormViewEnhancer'
-import FormButton from './shared/FormButton'
+import {renderWidth, renderSort} from '../helpers/formFunctions'
+import FormButton from '../components/shared/FormButton'
+import FormViewEnhancer from '../components/shared/FormViewEnhancer'
 import '../App.css'
 
-class WoodCuttingForm extends Component {
-
+class FoodCuttingForm extends Component {
   onSubmit() {
-    this.props.history.push('/doradca/drewno/pily')
+    this.props.history.push('/doradca/zywnosc/pily')
   }
 
   render() {
     const {handleSubmit} = this.props
-
     return (
         <div>
           <Steps current={2}>
@@ -27,23 +25,22 @@ class WoodCuttingForm extends Component {
             <Step/>
           </Steps>
           <form onSubmit={handleSubmit(() => this.onSubmit())}>
+            <label className="form-label">Szerokość:</label>
+            <div>
+              {renderWidth(data, 'food')}
+            </div>
             <label className="form-label">Zastosowanie:</label>
             <div>
-              {renderSort(data, 'wood')}
-            </div>
-            <label className="form-label">Rodzaj cięcia:</label>
-            <div>
-              {renderType(data, 'wood')}
+              {renderSort(data, 'food')}
             </div>
             <FormButton />
           </form>
-
         </div>
     )
   }
 }
 
 export default reduxForm({
-  form: 'WoodCuttingForm',
+  form: 'FoodCuttingForm',
   destroyOnUnmount: false
-})(FormViewEnhancer(WoodCuttingForm))
+})(FormViewEnhancer(FoodCuttingForm))

@@ -6,8 +6,8 @@ import {reduxForm} from 'redux-form'
 import data from '../data/data.json'
 import Steps, {Step} from 'rc-steps'
 import {renderProducer, renderWidth, renderSort, renderType} from '../helpers/formFunctions'
-import FormButton from './shared/FormButton'
-import FormViewEnhancer from './shared/FormViewEnhancer'
+import FormButton from '../components/shared/FormButton'
+import FormViewEnhancer from '../components/shared/FormViewEnhancer'
 import '../App.css'
 
 class MetalCuttingForm extends Component {
