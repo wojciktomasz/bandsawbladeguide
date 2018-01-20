@@ -29,7 +29,7 @@ class App extends Component {
               <Link to='/doradca/zywnosc' className='btn btn-primary'>
                   Cięcie żywności
               </Link>
-              <Link to='/doradca/zywnosc' className='btn btn-primary'>
+              <Link to='/doradca/tworzywo' className='btn btn-primary'>
                   Cięcie tworzywa
               </Link>
             </div>
