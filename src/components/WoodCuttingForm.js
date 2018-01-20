@@ -6,8 +6,8 @@ import {reduxForm} from 'redux-form'
 import data from '../data/data.json'
 import Steps, {Step} from 'rc-steps'
 import {renderSort, renderType} from '../helpers/formFunctions'
-import FormViewEnhancer from './Shared/FormViewEnhancer'
-import FormButton from './Shared/FormButton'
+import FormViewEnhancer from './shared/FormViewEnhancer'
+import FormButton from './shared/FormButton'
 import '../App.css'
 
 class WoodCuttingForm extends Component {

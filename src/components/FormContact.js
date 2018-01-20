@@ -6,7 +6,7 @@ import 'font-awesome/css/font-awesome.min.css'
 
 const FormContact = () => {
   return (
-      <div>
+      <div className='col-md-4'>
         <img src='http://sword.pl/wp-content/uploads/2017/02/doradca.jpg' alt='Wirtualny Doradca doboru pił taśmowych' className='img img-fluid'/>
         <div className='form-contact'>
           <h3>Doradca Techniczny</h3>

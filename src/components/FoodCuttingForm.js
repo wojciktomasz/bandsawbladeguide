@@ -6,8 +6,8 @@ import {reduxForm} from 'redux-form'
 import data from '../data/data.json'
 import Steps, {Step} from 'rc-steps'
 import {renderWidth, renderSort} from '../helpers/formFunctions'
-import FormButton from './Shared/FormButton'
-import FormViewEnhancer from './Shared/FormViewEnhancer'
+import FormButton from './shared/FormButton'
+import FormViewEnhancer from './shared/FormViewEnhancer'
 import '../App.css'
 
 class FoodCuttingForm extends Component {
