@@ -5,6 +5,7 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {getFormValues} from 'redux-form'
 import Steps, {Step} from 'rc-steps'
+import PropTypes from 'prop-types'
 import FormViewEnhancer from '../components/shared/FormViewEnhancer'
 import {renderBlades} from '../helpers/resultsFunctions'
 
@@ -24,6 +25,14 @@ class WoodCuttingResults extends Component {
         </div>
     )
   }
+}
+
+WoodCuttingResults.propTypes = {
+  chosenValues: PropTypes.shape({})
+}
+
+WoodCuttingResults.defaultProps = {
+  chosenValues: {}
 }
 
 const mapStateToProps = state => {

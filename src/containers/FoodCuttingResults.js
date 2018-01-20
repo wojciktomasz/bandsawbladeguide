@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {getFormValues} from 'redux-form'
+import PropTypes from 'prop-types'
 import {renderBladesWithWidthsNoType} from '../helpers/resultsFunctions'
 import FormViewEnhancer from '../components/shared/FormViewEnhancer'
 import Steps, {Step} from 'rc-steps'
@@ -21,6 +22,14 @@ class FoodCuttingResults extends Component {
         </div>
     )
   }
+}
+
+FoodCuttingResults.propTypes = {
+  chosenValues: PropTypes.shape({})
+}
+
+FoodCuttingResults.defaultProps = {
+  chosenValues: {}
 }
 
 const mapStateToProps = state => {
